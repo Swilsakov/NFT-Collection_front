@@ -2,6 +2,7 @@
   font-family: "";
   font-family: var(--font-mono);
   background-color: rgb(255, 255, 196);
+  min-height: 100vh;
 }
 
 .main__desc {
@@ -35,8 +36,7 @@
 .main {
   max-width: 1350px;
   margin: 0 auto;
-  min-height: 100vh;
-  padding: 15rem;
+  padding-top: 15rem;
 }
 
 .mint__block {
