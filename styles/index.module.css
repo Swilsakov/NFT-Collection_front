@@ -1,7 +1,11 @@
 .container {
   font-family: "";
   font-family: var(--font-mono);
-  background-color: rgb(255, 255, 184);
+  background-color: rgb(255, 255, 196);
+}
+
+.main__desc {
+  margin-bottom: 12px;
 }
 
 ._btn {
@@ -16,7 +20,7 @@
 }
 
 .header {
-  background-color: rgb(215, 255, 215);
+  background-color: rgb(202, 255, 202);
 }
 
 .header__content {
@@ -31,7 +35,16 @@
 .main {
   max-width: 1350px;
   margin: 0 auto;
+  min-height: 100vh;
+  padding: 15rem;
 }
+
+.mint__block {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 
 .content {
   margin-top: 60px;

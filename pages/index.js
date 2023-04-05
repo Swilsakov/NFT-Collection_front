@@ -66,17 +66,22 @@ export default function Home() {
   const renderButton = () => {
     if (walletConnected) {
       return (
-        <div>
+        <div className={styles.mint__block}>
           <button onClick={safeMint} className={styles._btn}>
             Mint NFT
           </button>
+          <p className={styles.content__amount}>You have {nfts} nfts</p>
         </div>
       );
     } else {
       return (
-        <button onClick={connectWallet} className={styles._btn}>
-          Connect Wallet
-        </button>
+        <>
+          <p>Connect wallet to Mint NFT</p>
+        </>
+
+        // <button onClick={connectWallet} className={styles._btn}>
+        //   Connect Wallet
+        // </button>
       );
     }
   };
@@ -102,7 +107,7 @@ export default function Home() {
       <div className={styles.container}>
         <div className={styles.header}>
           <div className={styles.header__content}>
-            <button className={styles._btn}>
+            <button onClick={connectWallet} className={styles._btn}>
               {!walletConnected ? "Connect Wallet" : "Disconnect"}
             </button>
           </div>
@@ -112,8 +117,8 @@ export default function Home() {
             <h1 className={styles.content__heading}>
               Crypto Ananas NFT Collection
             </h1>
+            <p className={styles.main__desc}>NFT costs 0.001 BNBt</p>
             {renderButton()}
-            <p className={styles.content__amount}>You have {nfts} nfts</p>
           </div>
         </main>
       </div>
