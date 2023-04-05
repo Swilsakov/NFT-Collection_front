@@ -1,0 +1,51 @@
+.container {
+  font-family: "";
+  font-family: var(--font-mono);
+  background-color: rgb(255, 255, 184);
+}
+
+._btn {
+  padding: 15px 22px;
+  border: 1px solid #1f1f1fb6;
+  border-radius: 7px;
+  font-family: inherit;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: rgb(255, 223, 79);
+}
+
+.header {
+  background-color: rgb(215, 255, 215);
+}
+
+.header__content {
+  height: 83px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+.main {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+.content {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content__heading {
+  font-size: 44px;
+  margin-bottom: 60px;
+}
+
+.content__amount {
+  margin-top: 12px;
+}
